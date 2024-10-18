@@ -1,0 +1,58 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "The Importance of Learning React",
+      "author": "Jane Doe",
+      "date": "2024-10-01",
+      "description": "React is a powerful JavaScript library that simplifies UI development with reusable components and efficient code management.",
+      "content": "React is a powerful library for building user interfaces. Its component-based architecture allows for reusable code and easy maintenance. In this post, we will explore why learning React is beneficial for web developers.",
+      "image": "https://www.patterns.dev/img/reactjs/react-logo@3x.svg"
+    },
+    {
+      "id": 2,
+      "title": "Understanding JavaScript Promises",
+      "author": "John Smith",
+      "date": "2024-10-05",
+      "description": "JavaScript promises are crucial for handling asynchronous operations and are essential for modern web development.",
+      "content": "Promises are an essential feature of JavaScript that help manage asynchronous operations. In this blog, we will dive into how promises work and why they are important for modern web applications.",
+      "image": "https://www.freecodecamp.org/news/content/images/2020/04/jsposter.jpg"
+    },
+    {
+      "id": 3,
+      "title": "A Guide to CSS Flexbox",
+      "author": "Emily Johnson",
+      "date": "2024-10-10",
+      "description": "Flexbox is a CSS layout system that efficiently arranges, aligns, and distributes space among items in a container.",
+      "content": "Flexbox is a CSS layout module that provides a more efficient way to layout, align, and distribute space among items in a container. In this article, we'll explore the basics of Flexbox and how to use it effectively.",
+      "image": "https://pub-e7ad803658b0405c87e1ed9e9c18552b.r2.dev/users/1/articles/1d201a65-3d8a-48df-8ed2-9626cd9061c5_flex.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Building a RESTful API with Node.js",
+      "author": "Michael Brown",
+      "date": "2024-10-15",
+      "description": "Learn how to create a RESTful API using Node.js and Express for fast and scalable web applications.",
+      "content": "Node.js is a great environment for building fast and scalable APIs. This post will walk you through the steps to create a RESTful API using Node.js and Express.",
+      "image": "https://velog.velcdn.com/images/bluewind8791/post/a5b48526-097e-4fc6-a1bf-d7cb19c9c756/image.png"
+    },
+    {
+      "id": 5,
+      "title": "Tips for Responsive Web Design",
+      "author": "Sarah Wilson",
+      "date": "2024-10-20",
+      "description": "Best practices for creating responsive websites that look great on all devices.",
+      "content": "Responsive web design is essential for creating websites that look good on all devices. In this article, we will share some best practices for ensuring your website is responsive and user-friendly.",
+      "image": "https://almablog-media.s3.ap-south-1.amazonaws.com/Understanding_the_Basics_of_Responsive_Web_Design_Tips_and_Examples_651f160f49_0b89e4b434.png"
+    },
+    {
+      "id": 6,
+      "title": "Mastering CSS Grid Layout",
+      "author": "Emma White",
+      "date": "2024-10-25",
+      "description": "An introduction to CSS Grid Layout, a powerful tool for creating complex web layouts.",
+      "content": "CSS Grid Layout is a two-dimensional layout system that allows you to design web pages using rows and columns. This post will cover the basics of CSS Grid and how to implement it in your projects.",
+      "image": "https://miro.medium.com/v2/resize:fit:1400/1*jHkvPPSCnl_zAhfwi9jbIg.jpeg"
+    }
+  ]
+}
