@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faAdd, faCoffee, faSearch } from '@fortawesome/free-solid-svg-icons'
 import '../App.css'
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
@@ -12,7 +13,8 @@ const Home = () => {
         const response = await fetch("http://localhost:5000/blogs");
         if (!response.ok) throw new Error("Network is not responding");
         const data = await response.json();
-        setBlogs(data);
+        const sortedBlogs = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+        setBlogs(sortedBlogs);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -28,7 +30,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container mt-5">
+      <div className="container mt-5 mb-5">
         <h1 className="text-center fw-bold">TechBlogger</h1>
         <div>
         <form className="searchbar">
@@ -39,7 +41,7 @@ const Home = () => {
                     type="text" 
                     aria-label="Search"
                 />
-                <span className="input-group-text border-0 bg-transparent position-absolute" style={{ right: '5px', top: '50%', transform: 'translateY(-50%)',cursor:"pointer" }}>
+                <span className="input-group-text border-0 bg-transparent position-absolute" style={{ right: '5px', top: '50%', transform: 'translateY(-50%)',cursor:"pointer",zIndex:"1" }}>
                     <FontAwesomeIcon icon={faSearch} />
                 </span>
             </div>
@@ -57,12 +59,14 @@ const Home = () => {
                 <p className="me-2">{data.author} | </p>
                 <p>{data.date}</p>
               </div>
-              <h3>{data.title}</h3>
+              <h3 >{data.title}</h3>
               <p className="text-muted">{data.description}</p>
             </div>
           ))}
         </div>
-        <button className="btn btn-danger w-25 mx-auto d-block">Add</button>
+        <Link to={"/add"}>
+            <button className="btn mx-auto d-block add-btn"><FontAwesomeIcon className="icon" icon={faAdd}/></button>
+        </Link>
       </div>
     </>
   );

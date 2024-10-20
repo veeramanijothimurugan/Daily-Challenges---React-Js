@@ -1,0 +1,40 @@
+.add-btn {
+  width: 40px; /* Initial small width to show only + symbol */
+  overflow: hidden; /* Hide the rest of the content initially */
+  white-space: nowrap; /* Prevent wrapping of text */
+  transition: width 0.5s ease; /* Smooth transition on hover */
+  font-size: 20px;
+  background-color: #000;
+  border-radius: 50px;
+  padding: 10px 25px;
+  color: white;
+  border: 2px solid rgb(0, 191, 255);
+  position: fixed;
+  top: 90%;
+  left: 3%;
+
+}
+
+.add-btn:hover {
+  width: 200px; /* Expand to full width on hover */
+  background-color: black;
+  padding: 10px 0px;
+  transform: translateX(8px);
+  color: white;
+  border: 2px solid rgb(0, 191, 255);
+}
+
+.add-btn::after {
+  content: ' Add Blog'; /* Text to display on hover */
+  font-weight: 500;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth fade-in effect */
+}
+
+.add-btn:hover::after {
+  opacity: 1; /* Show text on hover */
+}
+
+.icon{
+  transform: translateX(-8px);
+}
